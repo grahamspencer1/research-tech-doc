@@ -56,11 +56,19 @@ puts dwarves.pop # => removes "sneezy"
 
 ##### Hash #####
 
+medal = { "bronze" => 100, "silver" => 500, "gold" => 1000 }
 
+# to_a - bundles arrays to show which pair up
+medal.to_a # => [["bronze", 100], ["silver", 500], ["gold", 1000]]
 
-# to_a
-# has_key?
-# has_value?
+# has_key? - boolean for if a key is there or not
+medal.has_key?("gold") # => true
+medal.has_key?("platinum") # => false
+
+# has_value? - boolean for if a value is there or not
+medal.has_value?(500) # => true
+medal.has_value?(250) # => false
+
 
 ##### Time #####
 
