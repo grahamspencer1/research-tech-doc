@@ -6,23 +6,22 @@
 # 4 - Write an example (in code) of how to use the method
 #   - run your code to make sure your example is valid!
 
-# String - "Example"
+
+##### String #####
 
 # length - tells you how many characters are in a string
-
 puts "volcano".length # => 7
 puts "supercalifragilisticexpialidocious".length # => 34
 puts "".length # => 0
 
-#strip - removes white space at the beginning and end of a string
 
+#strip - removes white space at the beginning and end of a string
 puts "      My Name Is Judge    ".strip # => "My Name Is Judge"
 puts "What        Is         Going        On?       ".strip # => "What        Is         Going        On?"
 puts "                               Snack Overflow".strip # => "Snack Overflow"
 
 
 # split - divides a string into substrings based on white space (default) or a specified parameter (given)
-
 print "teeny tiny timmy time".split # => ["teeny", "tiny", "timmy", "time"]
 puts "\n"
 print "teeny tiny timmy time".split("ti") # => ["teeny ", "ny ", "mmy ", "me"]
@@ -32,25 +31,42 @@ puts "\n"
 
 
 # start_with? - boolean response if a string starts with another string
-
 puts "country music rocks".start_with?("country") # => true
 puts "country music sucks".start_with?("music") # => false
 puts "country music is just okay".start_with?("count") # => true
 
-# Array
-# first
-# delete_at
-# delete
-# pop
 
-# Hash
+##### Array #####
+
+dwarves = ["doc", "sleepy", "dopey", "bashful", "grumpy", "happy", "sneezy"]
+
+# first - lists the first value in an array
+puts dwarves.first # => "doc"
+
+# delete_at - removes an element based on position
+puts dwarves.delete_at(3) # => removes "bashful"
+puts dwarves.delete_at(0) # => removes "doc"
+
+# delete - removes a specified element
+puts dwarves.delete("grumpy") # => removes "grumpy"
+
+# pop - removes the last item
+puts dwarves.pop # => removes "sneezy"
+
+
+##### Hash #####
+
+
+
 # to_a
 # has_key?
 # has_value?
 
-# Time
+##### Time #####
+
 # now
 
-# File
+##### File #####
+
 # exist?
 # extname
