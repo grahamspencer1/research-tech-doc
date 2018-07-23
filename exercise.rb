@@ -59,22 +59,27 @@ puts dwarves.pop # => removes "sneezy"
 medal = { "bronze" => 100, "silver" => 500, "gold" => 1000 }
 
 # to_a - bundles arrays to show which pair up
-medal.to_a # => [["bronze", 100], ["silver", 500], ["gold", 1000]]
+puts medal.to_a # => [["bronze", 100], ["silver", 500], ["gold", 1000]]
 
 # has_key? - boolean for if a key is there or not
-medal.has_key?("gold") # => true
-medal.has_key?("platinum") # => false
+puts medal.has_key?("gold") # => true
+puts medal.has_key?("platinum") # => false
 
 # has_value? - boolean for if a value is there or not
-medal.has_value?(500) # => true
-medal.has_value?(250) # => false
+puts medal.has_value?(500) # => true
+puts medal.has_value?(250) # => false
 
 
 ##### Time #####
 
-# now
+# now - gives you the time
+puts Time.now # => 2018-07-22 21:47:20
 
 ##### File #####
 
-# exist?
-# extname
+# exist? - boolean to see if a file exists within a directory
+puts File.exist?("exercise.rb") # => true
+puts File.exist?("jazzercise.rb") # => false
+
+# extname - gives extension of a file
+puts File.extname("exercise.rb") # => .rb
